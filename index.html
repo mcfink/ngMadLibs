@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html data-ng-app="myApp">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script data-require="angular.js@1.3.10" data-semver="1.3.10" src="https://code.angularjs.org/1.3.10/angular.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body data-ng-init="words=['*female name*', '*job title*', '*tedious task*', '*dirty task*', '*celebrity*', '*useless skill*', '*adjective*', '*obnoxious celebrity*', '*huge number*']">
+<header>
+	<div class="logo">
+		<img src="images/mad-lib-happy-face.png"/>
+	</div>
+	<div class="title-box">
+		<img class="title-image" src="images/ng-mad-libs-logo.png" />
+		<h1>Automate This!</h1>
+	</div>
+</header>
+<div class="madlib-entry">
+	<h2>Provide the following words:</h2>
+	<table>
+		<tr>
+			<td><input type="text" ng-model=words[0]></td>
+			<td><input type="text" ng-model=words[1]></td>
+			<td><input type="text" ng-model=words[2]></td>
+		</tr>
+		<tr>
+			<td><input type="text" ng-model=words[3]></td>
+			<td><input type="text" ng-model=words[4]></td>
+			<td><input type="text" ng-model=words[5]></td>
+		</tr>
+		<tr>
+			<td><input type="text" ng-model=words[6]></td>
+			<td><input type="text" ng-model=words[7]></td>
+			<td><input type="text" ng-model=words[8]></td>
+		</tr>
+
+	</table>
+</div>
+<div class="madlib-completion" >
+	<p class="madlib-text"><span class=blank>{{ words[0] }}</span> was a <span class=blank>{{ words[1] }}</span> who loved technology. Although she loved parts of her job, she absolutely hated  <span class=blank>{{ words[2] }}</span> and <span class=blank>{{ words[3] }}</span>. So, <span class=blank>{{ words[0] }}</span> met with her life mentor <span class=blank>{{ words[4] }}</span> who told her to learn how to <span class=blank>{{ words[5] }}</span> with Thinkful. Thinkful didn't offer a course on <span class=blank>{{ words[5] }}</span> so she studied programming instead.</p>
+	 
+	<p class="madlib-text">What a great decision! With her new skills, <span class=blank>{{ words[0] }}</span> built a(n) <span class=blank>{{ words[6] }}</span> robot named <span class=blank>{{ words[7] }}</span> that not only loved <span class=blank>{{ words[3] }}</span> but did it <span class=blank>{{ words[8] }}</span> faster. 
+	</p>
+</div>
+
+</body>

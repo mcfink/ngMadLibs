@@ -1,0 +1,85 @@
+html{
+	min-width: 880px;
+}
+
+
+header{
+	position: absolute;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%,0);
+	text-align: center;
+	display: block;
+}
+
+img{
+	height: 120px;
+}
+
+h1{
+	font-size: 48px;
+	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+
+}
+h2 {
+	padding: 0 20px;
+	font-family: sans-serif;
+}
+
+table{
+	padding: 0 20px 20px 20px;
+}
+
+input{
+	font-size: 18px;
+}
+
+.logo{
+	border: 3px solid black;
+	margin-right: -3px;
+	padding: 10px 0;
+	width: 220px;
+	float: left;
+}
+
+.madlib-entry{
+	border: 3px solid black;
+	width: 803px;
+	margin: 0 auto;
+	position: relative;
+	top: 147px;
+}
+
+.madlib-completion{
+	border: 3px solid black;
+	width: 803px;
+	margin: 0 auto;
+	position: relative;
+	top: 144px;
+}
+
+.blank{
+	text-decoration: underline;
+}
+
+.madlib-text{
+	font-size: 16px;
+	clear: left;
+	font-family: sans-serif;
+	padding: 10px 20px;
+}
+
+.title-box{
+	border: 3px solid black;
+	margin-left: 0px;
+	height: 144px;
+	width: 580px;
+	float: left;
+	margin-right: auto;
+}
+
+.title-image{
+	height: 60px;
+	margin-bottom: -30px;
+}
