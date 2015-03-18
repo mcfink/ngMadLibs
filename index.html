@@ -7,7 +7,7 @@
   <script src="script.js"></script>
 </head>
 
-<body data-ng-init="words=['*female name*', '*job title*', '*tedious task*', '*dirty task*', '*celebrity*', '*useless skill*', '*adjective*', '*obnoxious celebrity*', '*huge number*']">
+<body ng-controller="myController">
 <header>
 	<div class="logo">
 		<img src="images/mad-lib-happy-face.png"/>
@@ -21,7 +21,7 @@
 	<h2>Provide the following words:</h2>
 	<table>
 		<tr>
-			<td><input type="text" ng-model=words[0]></td>
+			<td><input type="text" placeholder={{words[0]}}</td>
 			<td><input type="text" ng-model=words[1]></td>
 			<td><input type="text" ng-model=words[2]></td>
 		</tr>
