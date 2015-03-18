@@ -18,10 +18,15 @@
 	</div>
 </header>
 <div class="madlib-entry">
+	<div class="gender-question">
+		<h3>Your gender:</h3><input type="radio" name="gender" value="female" ng-model="gender">Female
+			<input type="radio" name="gender" value="male" ng-model="gender">Male
+	</div>
 	<h2>Provide the following words:</h2>
 	<table>
 		<tr>
-			<td><input type="text" ng-model=words[0] placeholder={{words[0]}}></td>
+			<td ng-if="gender != 'male'"><input type="text" ng-model=words[0]></td>
+			<td ng-if="gender == 'male'"><input type="text" ng-model=words[9]></td>
 			<td><input type="text" ng-model=words[1]></td>
 			<td><input type="text" ng-model=words[2]></td>
 		</tr>
@@ -38,10 +43,17 @@
 
 	</table>
 </div>
-<div class="madlib-completion" >
+<div class="madlib-completion" ng-if="gender == 'female'">
 	<p class="madlib-text"><span class="blank">{{ words[0] }}</span> was a <span class="blank">{{ words[1] }}</span> who loved technology. Although she loved parts of her job, she absolutely hated  <span class="blank">{{ words[2] }}</span> and <span class="blank">{{ words[3] }}</span>. So, <span class="blank">{{ words[0] }}</span> met with her life mentor <span class="blank">{{ words[4] }}</span> who told her to learn how to <span class="blank">{{ words[5] }}</span> with Thinkful. Thinkful didn't offer a course on <span class="blank">{{ words[5] }}</span> so she studied programming instead.</p>
 	 
-	<p class="madlib-text">What a great decision! With her new skills, <span class="blank">{{ words[0] }}</span> built a(n) <span class="blank">{{ words[6] }}</span> robot named <span class="blank">{{ words[7] }}</span> that not only loved <span class="blank">{{ words[3] }}</span> but did it <span class="blank">{{ words[8] }}</span> faster. 
+	<p class="madlib-text">What a great decision! With her new skills, <span class="blank">{{ words[0] }}</span> built a(n) <span class="blank">{{ words[6] }}</span> robot named <span class="blank">{{ words[7] }}</span> that not only loved <span class="blank">{{ words[3] }}</span> but did it <span class="blank">{{ words[8] }}</span> times faster. 
+	</p>
+</div>
+
+<div class="madlib-completion" ng-if="gender == 'male'">
+	<p class="madlib-text"><span class="blank">{{ words[9] }}</span> was a <span class="blank">{{ words[1] }}</span> who loved technology. Although he loved parts of his job, he absolutely hated  <span class="blank">{{ words[2] }}</span> and <span class="blank">{{ words[3] }}</span>. So, <span class="blank">{{ words[9] }}</span> met with his life mentor <span class="blank">{{ words[4] }}</span> who told him to learn how to <span class="blank">{{ words[5] }}</span> with Thinkful. Thinkful didn't offer a course on <span class="blank">{{ words[5] }}</span> so he studied programming instead.</p>
+	 
+	<p class="madlib-text">What a great decision! With his new skills, <span class="blank">{{ words[9] }}</span> built a(n) <span class="blank">{{ words[6] }}</span> robot named <span class="blank">{{ words[7] }}</span> that not only loved <span class="blank">{{ words[3] }}</span> but did it <span class="blank">{{ words[8] }}</span> times faster. 
 	</p>
 </div>
 
