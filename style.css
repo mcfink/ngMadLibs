@@ -1,5 +1,6 @@
 html{
 	min-width: 880px;
+	margin: 0 auto;
 }
 
 
@@ -17,6 +18,12 @@ img{
 	height: 120px;
 }
 
+hr{
+	margin: 10px 120px;
+	height: 1px;
+	background: #44F;
+}
+
 h1{
 	font-size: 48px;
 	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
@@ -28,11 +35,29 @@ h2 {
 }
 
 table{
-	padding: 0 20px 20px 20px;
+	margin: 0 auto 20px auto;
+}
+
+td{
+	border: 2px solid black;
 }
 
 input{
 	font-size: 18px;
+}
+
+button{
+	font-size: 18px;
+	margin: 10px 30px 10px auto;
+	position: relative;
+	right: -70%;
+}
+
+button:hover{
+	background-color: #DDF;
+	border: 1px solid red;
+	font-style: normal;
+	padding: 1px 8px 2px 7px;
 }
 
 .logo{
@@ -63,6 +88,16 @@ input{
 	text-decoration: underline;
 }
 
+.errors{
+	font-size: 1em;
+	margin-left: 8%;
+	font-family: sans-serif;
+}
+
+.gender{
+	width: 1.2em;	
+}
+
 .madlib-text{
 	font-size: 16px;
 	clear: left;
@@ -82,6 +117,10 @@ input{
 .title-image{
 	height: 60px;
 	margin-bottom: -30px;
+}
+
+td > .ng-invalid.ng-dirty{
+	border: 2px solid red;
 }
 
 .gender-question{
