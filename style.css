@@ -1,0 +1,128 @@
+html{
+	min-width: 880px;
+	margin: 0 auto;
+}
+
+
+header{
+	position: absolute;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%,0);
+	text-align: center;
+	display: block;
+}
+
+img{
+	height: 120px;
+}
+
+hr{
+	margin: 10px 120px;
+	height: 1px;
+	background: #44F;
+}
+
+h1{
+	font-size: 48px;
+	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+
+}
+h2 {
+	padding: 0 20px;
+	font-family: sans-serif;
+}
+
+table{
+	margin: 0 auto 20px auto;
+}
+
+td{
+	border: 2px solid black;
+}
+
+input{
+	font-size: 18px;
+}
+
+button{
+	font-size: 18px;
+	margin: 10px 30px 10px auto;
+	position: relative;
+	right: -70%;
+}
+
+button:hover{
+	background-color: #DDF;
+	border: 1px solid red;
+	font-style: normal;
+	padding: 1px 8px 2px 7px;
+}
+
+.logo{
+	border: 3px solid black;
+	margin-right: -3px;
+	padding: 10px 0;
+	width: 220px;
+	float: left;
+}
+
+.madlib-entry{
+	border: 3px solid black;
+	width: 803px;
+	margin: 0 auto;
+	position: relative;
+	top: 147px;
+}
+
+.madlib-completion{
+	border: 3px solid black;
+	width: 803px;
+	margin: 0 auto;
+	position: relative;
+	top: 144px;
+}
+
+.blank{
+	text-decoration: underline;
+}
+
+.errors{
+	font-size: 1em;
+	margin-left: 8%;
+	font-family: sans-serif;
+}
+
+.gender{
+	width: 1.2em;	
+}
+
+.madlib-text{
+	font-size: 16px;
+	clear: left;
+	font-family: sans-serif;
+	padding: 10px 20px;
+}
+
+.title-box{
+	border: 3px solid black;
+	margin-left: 0px;
+	height: 144px;
+	width: 580px;
+	float: left;
+	margin-right: auto;
+}
+
+.title-image{
+	height: 60px;
+	margin-bottom: -30px;
+}
+
+td > .ng-invalid.ng-dirty{
+	border: 2px solid red;
+}
+
+.gender-question{
+	padding-left: 20px;
+}
