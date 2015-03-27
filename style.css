@@ -71,21 +71,30 @@ button:hover{
 .madlib-entry{
 	border: 3px solid black;
 	width: 803px;
-	margin: 0 auto;
-	position: relative;
-	top: 147px;
+	position: absolute;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%,0);
+	top: 154px;
+	opacity: 1;
+	background-color: #EEF;
 }
 
 .madlib-completion{
 	border: 3px solid black;
 	width: 803px;
-	margin: 0 auto;
-	position: relative;
-	top: 144px;
+	position: absolute;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%,0);
+	top: 154px;
 }
 
 .blank{
 	text-decoration: underline;
+	color: blank;
 }
 
 .errors{
@@ -125,4 +134,69 @@ td > .ng-invalid.ng-dirty{
 
 .gender-question{
 	padding-left: 20px;
+}
+
+.madlib-entry.ng-hide-add, .madlib-entry.ng-hide-remove{
+	display: block !important;
+	transition: 0s linear all;
+}
+
+.madlib-entry.ng-hide-add{
+	-webkit-transition: all linear 1s;
+	transition: all linear 1s;
+}
+
+.madlib-entry.ng-hide-remove{
+	-webkit-transition: all linear 1s 1.2s;
+	transition: all linear 1s 1.2s;
+}
+
+.madlib-entry.ng-hide-add{
+	opacity: 1;
+}
+
+.madlib-entry.ng-hide-add.ng-hide-add-active{
+	opacity: 0;
+}
+
+.madlib-entry.ng-hide-remove{
+	opacity: 0;
+}
+
+.madlib-entry.ng-hide-remove.ng-hide-remove-active{
+	opacity: 1;
+}
+
+.madlib-completion.ng-hide-add{
+	-webkit-transition: all linear 1s;
+	transition: all linear 1s;
+}
+
+.madlib-completion.ng-hide-remove{
+	-webkit-transition: all linear 1s 1.2s;
+	transition: all linear 1s 1.2s;
+}
+
+.madlib-completion.ng-hide-add, .madlib-completion.ng-hide-remove{
+	display: block !important;
+}
+
+.madlib-completion.ng-hide-add{
+	opacity: 1;
+}
+
+.madlib-completion.ng-hide-add.ng-hide-add-active{
+	opacity: 0;
+}
+
+.madlib-completion.ng-hide-remove{
+	opacity: 0;
+}
+
+.madlib-completion.ng-hide-remove.ng-hide-remove-active{
+	opacity: 1;
+}
+
+.madlib-completion.ng-hide-remove.ng-hide-remove-active .blank{
+	color: red;
 }
