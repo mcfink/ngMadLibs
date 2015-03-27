@@ -3,25 +3,26 @@ angular.module('myApp', [ 'ngAnimate'])
 		var placeholders = ["*female name*", "*job title*", "*tedious task*", "*dirty task*", "*celebrity*", "*useless skill*", "*adjective*", "*obnoxious celebrity*", "*huge number*", "*male name*" ];
 		var words = [];
 		var gender;
-		var showMadLib = false;
+		$scope.showMadLib = false;
 		
 		$scope.placeholders = placeholders;
 		$scope.words = words;
 		$scope.gender = gender;
 
 		$scope.submit = function(){
-			showMadLib = $scope.madlibEntry.$valid;
-			$scope.showMadLib = showMadLib;
+			$scope.showMadLib = $scope.madlibEntry.$valid;
 		}
 
 		$scope.reset = function(){
-			showMadLib = false;
+			$scope.showMadLib = false;
+			words = [];
+			
 			setTimeout(function() {
-				words = [];
-			}, 1500);
-			$scope.showMadLib = showMadLib;
-			$scope.madlibEntry.$setPristine();
-			$scope.words = words;
+				$scope.words = words;
+				$scope.madlibEntry.$setPristine();
+			}, 500);
+			
+			
 		}
 
 		
